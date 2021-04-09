@@ -1,0 +1,6 @@
+model_checkpoint_path: "D:/MKA_THESIS_DATA/trained_models_inpainting\\VGG\\run_031\\VGG-58704"
+all_model_checkpoint_paths: "D:/MKA_THESIS_DATA/trained_models_inpainting\\VGG\\run_031\\VGG-30089"
+all_model_checkpoint_paths: "D:/MKA_THESIS_DATA/trained_models_inpainting\\VGG\\run_031\\VGG-36284"
+all_model_checkpoint_paths: "D:/MKA_THESIS_DATA/trained_models_inpainting\\VGG\\run_031\\VGG-37169"
+all_model_checkpoint_paths: "D:/MKA_THESIS_DATA/trained_models_inpainting\\VGG\\run_031\\VGG-47494"
+all_model_checkpoint_paths: "D:/MKA_THESIS_DATA/trained_models_inpainting\\VGG\\run_031\\VGG-58704"

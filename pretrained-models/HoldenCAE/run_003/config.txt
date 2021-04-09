@@ -1,0 +1,40 @@
+perturbation_size: [60]
+use_unpooling: False
+use_batch_norm: False
+alpha: 0.0
+perturbation_amount: 1
+loss_fn: L2
+out_activation: none
+no_weight_sharing: False
+normalizer: mean
+discard_foot_contacts: False
+test: False
+use_same_filter_size: False
+feature_maps: [32, 64, 128, 256, 512]
+batch_size: 80
+curriculum: none
+dropout_internal: 0.75
+dropout: 0.75
+use_masked_loss: False
+n_epochs: 70
+perturbator: column
+decay_lr_every: 0
+model: holden
+seed: 42
+filter_heights: 3,3,3,3,3
+store_to_run: -1
+name: HoldenCAE
+lr: 1e-05
+optimizer: adam
+activation: relu
+eta: 0.0
+filter_widths: 3,3,3,3,3
+use_channels: False
+trainable_params: 934729
+description: Holden architecture with std normalizer and no activation in last layer, training on corrupted data
+
+hg revision: b'7b1982469862db27ecc50630006aa4703c58d40a\n'
+mka, 08.05.2017 13:04
+Addendum
+best validation loss: 783.52494166
+best epoch: 69

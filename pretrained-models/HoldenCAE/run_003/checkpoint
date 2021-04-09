@@ -1,0 +1,6 @@
+model_checkpoint_path: "/home/kamanuel/trained_models/HoldenCAE/run_003/HoldenCAE-20285"
+all_model_checkpoint_paths: "/home/kamanuel/trained_models/HoldenCAE/run_003/HoldenCAE-17345"
+all_model_checkpoint_paths: "/home/kamanuel/trained_models/HoldenCAE/run_003/HoldenCAE-17933"
+all_model_checkpoint_paths: "/home/kamanuel/trained_models/HoldenCAE/run_003/HoldenCAE-18521"
+all_model_checkpoint_paths: "/home/kamanuel/trained_models/HoldenCAE/run_003/HoldenCAE-19403"
+all_model_checkpoint_paths: "/home/kamanuel/trained_models/HoldenCAE/run_003/HoldenCAE-20285"

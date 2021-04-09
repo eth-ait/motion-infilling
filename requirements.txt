@@ -1,0 +1,17 @@
+certifi==2018.8.24
+cycler==0.10.0
+kiwisolver==1.1.0
+llvmlite==0.31.0
+matplotlib==3.0.3
+numba==0.47.0
+numpy==1.18.5
+numpy-quaternion==2020.9.5.14.42.2
+protobuf==3.13.0
+pyglet==1.5.7
+pyparsing==2.4.7
+python-dateutil==2.8.1
+scipy==1.4.1
+six==1.15.0
+tabulate==0.8.7
+tensorflow-gpu==0.12.1
+wincertstore==0.2

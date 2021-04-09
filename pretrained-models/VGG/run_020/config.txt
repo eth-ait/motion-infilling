@@ -1,0 +1,42 @@
+decay_lr_every: 500
+feature_maps: [32, 64, 128, 256, 512]
+use_same_filter_size: False
+store_to_run: 20
+use_masked_loss: False
+perturbator: column
+initializer: xavier
+curriculum: none
+dropout: 1.0
+use_batch_norm: False
+model: vgg
+skip_connections: 0
+eta: 0.0
+lr: 0.001
+name: VGG
+n_epochs: 100
+use_channels: False
+filter_heights: 3,3,3,3,3
+filter_widths: 3,3,3,3,3
+dropout_internal: 1.0
+out_activation: none
+no_weight_sharing: True
+loss_fn: L1
+alpha: 0.0
+perturbation_size: [60]
+optimizer: adam
+seed: 42
+activation: lrelu
+normalizer: mean
+test: False
+batch_size: 80
+discard_foot_contacts: True
+description: rerun of VGG1 with new data.
+trainable_params: 4703425
+use_unpooling: False
+perturbation_amount: 1
+
+hg revision: b'99e2da8fa7c168e90c1fd368cef23cd18a44f3f0\n'
+mka, 15.05.2017 18:59
+Addendum
+best validation loss: 3748.81050923
+best epoch: 99

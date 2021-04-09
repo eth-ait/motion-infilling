@@ -1,0 +1,6 @@
+model_checkpoint_path: "/home/kamanuel/trained_models/VanillaCAE/run_028/VanillaCAE-18521"
+all_model_checkpoint_paths: "/home/kamanuel/trained_models/VanillaCAE/run_028/VanillaCAE-12935"
+all_model_checkpoint_paths: "/home/kamanuel/trained_models/VanillaCAE/run_028/VanillaCAE-14699"
+all_model_checkpoint_paths: "/home/kamanuel/trained_models/VanillaCAE/run_028/VanillaCAE-15875"
+all_model_checkpoint_paths: "/home/kamanuel/trained_models/VanillaCAE/run_028/VanillaCAE-16169"
+all_model_checkpoint_paths: "/home/kamanuel/trained_models/VanillaCAE/run_028/VanillaCAE-18521"

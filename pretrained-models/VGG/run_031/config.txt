@@ -1,0 +1,43 @@
+use_batch_norm: False
+perturbator: none
+filter_widths: 3,3,3,3,3
+decay_lr_every: 0
+description: Same as VGG27 but with joint perturbator in the curriculum and for 200 epochs.
+seed: 42
+n_epochs: 200
+out_activation: none
+store_to_run: 31
+no_weight_sharing: True
+loss_fn: L1
+feature_maps: [32, 64, 128, 256, 512]
+alpha: 0.0
+test: False
+use_same_filter_size: False
+use_unpooling: False
+dropout_internal: 1.0
+perturbation_amount: 15
+batch_size: 80
+trainable_params: 4703425
+name: VGG
+perturbation_size: [2, 4, 6]
+model: vgg
+use_channels: False
+normalizer: mean
+dropout: 1.0
+initializer: xavier
+eta: 0.0
+use_masked_loss: False
+optimizer: adam
+filter_heights: 3,3,3,3,3
+add_joint_perturbator: True
+skip_connections: 0
+activation: lrelu
+curriculum: 10,120,20,5,10,10
+lr: 0.001
+discard_foot_contacts: True
+
+hg revision: b'4f77e95f1a018b293999c78637dd5715503de6de\n'
+mka, 21.05.2017 11:28
+Addendum
+best validation loss: 43.64374092
+best epoch: 199

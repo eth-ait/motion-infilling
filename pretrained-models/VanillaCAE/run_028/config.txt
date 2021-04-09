@@ -1,0 +1,40 @@
+optimizer: adam
+decay_lr_every: 0
+seed: 42
+dropout_internal: 1.0
+eta: 0.0
+out_activation: none
+use_same_filter_size: False
+alpha: 0.0
+normalizer: mean
+store_to_run: -1
+perturbation_size: [60]
+loss_fn: L1
+model: vanilla
+activation: tanh
+n_epochs: 70
+perturbator: column
+no_weight_sharing: True
+test: False
+perturbation_amount: 1
+use_channels: True
+filter_heights: 3,3,3,3,3
+batch_size: 80
+lr: 0.001
+name: VanillaCAE
+use_masked_loss: False
+use_unpooling: False
+curriculum: none
+trainable_params: 3136643
+dropout: 1.0
+use_batch_norm: False
+filter_widths: 3,3,3,3,3
+discard_foot_contacts: True
+feature_maps: [32, 64, 128, 256, 512]
+description: default
+
+hg revision: b'9acf52ef34a8aec207b4df0c31a3ee81fe823e25\n'
+mka, 09.05.2017 21:51
+Addendum
+best validation loss: 4760.36498724
+best epoch: 63

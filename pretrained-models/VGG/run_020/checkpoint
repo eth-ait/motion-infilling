@@ -1,0 +1,6 @@
+model_checkpoint_path: "/home/kamanuel/trained_models/VGG/run_020/VGG-29204"
+all_model_checkpoint_paths: "/home/kamanuel/trained_models/VGG/run_020/VGG-26549"
+all_model_checkpoint_paths: "/home/kamanuel/trained_models/VGG/run_020/VGG-26844"
+all_model_checkpoint_paths: "/home/kamanuel/trained_models/VGG/run_020/VGG-27434"
+all_model_checkpoint_paths: "/home/kamanuel/trained_models/VGG/run_020/VGG-28024"
+all_model_checkpoint_paths: "/home/kamanuel/trained_models/VGG/run_020/VGG-29204"
