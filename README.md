@@ -16,14 +16,14 @@ pip install --ignore-installed --upgrade https://storage.googleapis.com/tensorfl
 pip install --ignore-installed --upgrade https://storage.googleapis.com/tensorflow/linux/gpu/tensorflow_gpu-0.12.1-cp35-cp35m-linux_x86_64.whl
 ```
 
-A list of all dependencies is provided in `requirements.txt`. Lastly, make sure the folder `tbase` is on the python path. If you are using PyCharm, the quickest is to mark the folders `infilling` and `tbase` as "sources root".
+A list of all dependencies is provided in `requirements.txt`. Lastly, make sure the folder `tbase` is on the python path. If you are using PyCharm, the simply mark the folders `infilling` and `tbase` as "sources root".
 
 ## Quantitative Evaluation
-All necessary code for training and evaluation is provided in [infilling](infilling). You need to adjust paths in two places:
- - `get_data_path()` in `flags_parser.py`: return the path where the preprocessed data is located.
- - `get_checkpoints_path()` in `flags_parser.py`: return the path where pre-trained models are stored, currently set to `./pretrained-models`.
+All necessary code for training and evaluation is provided under [infilling](infilling). You need to adjust paths in two places:
+ - `get_data_path()` in `flags_parser.py`: return the path where the preprocessed data is located, currently set to `../data_preprocessed`.
+ - `get_checkpoints_path()` in `flags_parser.py`: return the path where pre-trained models are stored, currently set to `../pretrained-models`.
 
-Under [pretrained-models](pretrained-models) we provide the models mentioned in the paper. The mapping is as follows:
+Under [pretrained-models](pretrained-models) we provide the models described in the paper. The mapping is as follows:
 
 | Name in Paper | Path to Model |
 | --- | --- |
@@ -40,9 +40,9 @@ python evaluate.py --split validation --runs VGG/31fp --perturbator column --per
 python evaluate.py --split validation --runs VGG/31fp --perturbator column --perturbation_size [120]
 ```
 
-The syntax of the `--runs` parameter is as follows. `VGG/31` means that we want to evaluate the model under `pretrained-models/VGG/run_031`. `f` signals that foot contacts should be removed from the input data (we do not use them in our method) and `p` applies the perturbations. If the `p` is missing, no perturbations are applied.
+The syntax of the `--runs` parameter is as follows. `VGG/31` means that we want to evaluate the model under `pretrained-models/VGG/run_031`. `f` signals that foot contacts should be removed from the input data (we do not use them in our method) and `p` applies the perturbations. If the `p` is missing, no perturbations are applied, no matter how the remaining parameters are set.
 
-Hence, to reproduce row 2 in Table 1, you can use:
+As another example, to reproduce row 2 in Table 1 you can use:
 ```
 python evaluate.py --split validation --runs HoldenCAE/3
 python evaluate.py --split validation --runs HoldenCAE/3p --perturbator column --perturbation_size [60]
@@ -56,6 +56,9 @@ The scripts starting with `showcase_*.py` were used to create the results shown 
 
 ## Training
 The `main.py` script lets you re-train models from scratch. Please refer to the file `config.txt` which is available for each pretrained model to see which configuration parameters were used. Models are implemented in `models.py` and some layer implementations can be found in `ops.py`.
+
+# License
+You may use the code for non-commercial purposes as detailed in the [license file](LICENSE). Please also respect the usage terms of the individual motion databases used in this work.
 
 # Citation
 If you use this code, please cite
