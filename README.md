@@ -1,5 +1,5 @@
 # Convolutional Autoencoders for Human Motion Infilling
-This repository contains the code to [our paper](https://ait.ethz.ch/projects/2020/motion_infilling/) published at 3DV 2020. 
+This repository contains the code to [our paper](https://ait.ethz.ch/motion-infilling) published at 3DV 2020. 
 
 # Data
 This project uses data provided by Daniel Holden et al.'s paper A Deep Learning Framework for Character Motion Synthesis and Editing, which can be downloaded [here](http://theorangeduck.com/page/deep-learning-framework-character-motion-synthesis-and-editing). We preprocess the raw data and create training/validation splits with the scripts provided in [data-preprocessing](data-preprocessing). For this to work, you will need some helper functions provided in Daniel Holden's code base in the `motion` module. The code base can be downloaded [here](http://theorangeduck.com/media/uploads/other_stuff/motionsynth_code.zip).
